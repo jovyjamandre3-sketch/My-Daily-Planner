@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY DAILY PLANNER | Dashboard</title><link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body data-page="dashboard">
+  <header class="topbar"><a class="brand" href="index.html">✦ MY DAILY PLANNER</a><nav><a class="nav-link active" href="dashboard.html">Dashboard</a><a class="nav-link" href="school-work.html">School Work</a></nav></header>
+  <main class="container">
+    <section class="page-heading"><div><p class="eyebrow">YOUR SPACE TO SUCCEED</p><h1>Welcome, student! <span>☁</span></h1><p class="muted">Here’s a little overview of your schoolwork.</p></div></section>
+    <section class="stats-grid">
+      <article class="stat-card"><span class="stat-icon pink">📚</span><p>Total School Works</p><strong id="totalCount">—</strong></article>
+      <article class="stat-card"><span class="stat-icon blue">⏳</span><p>Pending Tasks</p><strong id="pendingCount">—</strong></article>
+      <article class="stat-card"><span class="stat-icon pink">✓</span><p>Completed Tasks</p><strong id="completedCount">—</strong></article>
+      <article class="stat-card"><span class="stat-icon blue">📅</span><p>Upcoming Deadlines</p><strong id="upcomingCount">—</strong></article>
+    </section>
+    <section class="dashboard-panel">
+      <div><p class="eyebrow">LET'S GET THINGS DONE</p><h2>Your next step starts here</h2><p class="muted">Add a school task or review your saved work.</p></div>
+      <div class="action-row"><a class="btn btn-primary" href="add-work.html">＋ Add School Work</a><a class="btn btn-secondary" href="school-work.html">View School Work</a></div>
+    </section>
+    <p class="status-message" id="dashboardMessage" role="status"></p>
+  </main>
+  <footer>Made for your learning journey ♡</footer>
+</body>
+</html>

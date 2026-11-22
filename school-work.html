@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY DAILY PLANNER | School Work</title><link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body data-page="list">
+  <header class="topbar"><a class="brand" href="index.html">✦ MY DAILY PLANNER</a><nav><a class="nav-link" href="dashboard.html">Dashboard</a><a class="nav-link active" href="school-work.html">School Work</a></nav></header>
+  <main class="container">
+    <section class="page-heading heading-with-button"><div><p class="eyebrow">YOUR TASKS, ALL IN ONE PLACE</p><h1>School Work <span>✿</span></h1><p class="muted">Review, update, and celebrate your progress.</p></div><a class="btn btn-primary" href="add-work.html">＋ Add School Work</a></section>
+    <div class="filter-row"><label for="statusFilter">Show:</label><select id="statusFilter"><option value="All">All School Work</option><option>Pending</option><option>In Progress</option><option>Completed</option></select><span id="listCount" class="muted"></span></div>
+    <section id="schoolWorkList" class="work-grid" aria-live="polite"><div class="loading-card">Loading your schoolwork…</div></section>
+    <div class="bottom-actions"><a class="btn btn-secondary" href="index.html">← Back to Front Page</a></div>
+  </main><footer>You’re doing better than you think ♡</footer>
+  <dialog id="deleteDialog" class="confirm-dialog"><h2>Delete this schoolwork?</h2><p>This record will be permanently deleted.</p><div class="form-actions"><button class="btn btn-secondary" id="keepWork">Cancel</button><button class="btn btn-danger" id="confirmDelete">Delete</button></div></dialog>
+</body>
+</html>

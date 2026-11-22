@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY DAILY PLANNER | Add School Work</title><link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body data-page="form">
+  <header class="topbar"><a class="brand" href="index.html">✦ MY DAILY PLANNER</a><nav><a class="nav-link" href="dashboard.html">Dashboard</a><a class="nav-link" href="school-work.html">School Work</a></nav></header>
+  <main class="container form-container">
+    <section class="page-heading"><div><p class="eyebrow">WRITE IT DOWN, MAKE IT HAPPEN</p><h1 id="formHeading">Add School Work <span>✎</span></h1><p class="muted">Fill in the details so you can keep track of your task.</p></div></section>
+    <form id="schoolWorkForm" class="form-card">
+      <div class="form-grid">
+        <label class="field full">School Work Title <span class="required">*</span><input id="title" name="title" type="text" placeholder="e.g. Database assignment" required maxlength="150"></label>
+        <label class="field">Subject <span class="required">*</span><input id="subject" name="subject" type="text" placeholder="e.g. Database Management" required maxlength="100"></label>
+        <label class="field">School Work Type <span class="required">*</span><select id="workType" name="workType" required><option value="">Choose type</option><option>Assignment</option><option>Project</option><option>Quiz</option><option>Exam</option><option>Presentation</option><option>Reading</option><option>Other</option></select></label>
+        <label class="field">Priority <select id="priority" name="priority"><option>Low</option><option selected>Medium</option><option>High</option></select></label>
+        <label class="field">Status <select id="status" name="status"><option>Pending</option><option>In Progress</option><option>Completed</option></select></label>
+        <label class="field">Due Date <span class="required">*</span><input id="dueDate" name="dueDate" type="date" required></label>
+        <label class="field">Due Time <input id="dueTime" name="dueTime" type="time"></label>
+        <label class="field full">Description <textarea id="description" name="description" rows="4" placeholder="Add notes or instructions for your schoolwork..."></textarea></label>
+      </div>
+      <p class="form-note">Fields marked with * are required.</p>
+      <div class="form-actions"><a class="btn btn-secondary" href="dashboard.html">Cancel</a><button class="btn btn-primary" type="submit" id="saveButton">Save School Work</button></div>
+      <p id="formMessage" class="status-message" role="status"></p>
+    </form>
+  </main><footer>Small steps lead to big achievements ♡</footer>
+</body>
+</html>
